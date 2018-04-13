@@ -3,9 +3,13 @@ dir=$(pwd)
 wl="/wordlist/"
 ws="/wordSound/"
 
-if [ ! -d $dir$wl ];then
-mkdir /wordlist
-elif [ ! -d $dir$ws ];then
+cd $dir
+
+if [ ! -d $wl ];then
+pwd
+mkdir /wordList
+elif [ ! -d $ws ];then
+pwd
 mkdir /wordSound
 else
 python app.py
