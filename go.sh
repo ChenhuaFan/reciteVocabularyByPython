@@ -5,12 +5,10 @@ ws="/wordSound/"
 
 cd $dir
 
-if [ ! -d $wl ];then
-pwd
-mkdir /wordList
-elif [ ! -d $ws ];then
-pwd
-mkdir /wordSound
+if [ ! -d $dir$wl ];then
+mkdir $dir$wl
+elif [ ! -d $dir$ws ];then
+mkdir $dir$ws
 else
 python app.py
 fi
