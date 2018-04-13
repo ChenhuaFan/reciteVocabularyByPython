@@ -64,7 +64,7 @@ class App(object):
         print App.app_text("版本为："+self.ver)
         if self.dic_id == "" or self.dic_key == "":
             print "没有找到有道词典id和key"
-            return
+            exit()
         self.name = raw_input(App.app_text("您要加载的单词表是? 输入文件名即可,不需要后缀名: "))
         self.eroll_name = self.name
         # the next function
