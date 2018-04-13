@@ -1,7 +1,7 @@
 # init
-$dir=pwd
-$wl="/wordlist/"
-$ws="/wordSound/"
+dir=$(pwd)
+wl="/wordlist/"
+ws="/wordSound/"
 
 if [ ! -d $dir$wl ];then
 mkdir /wordlist
