@@ -1,27 +1,26 @@
 # reciteVocabularyByPython
-一个帮助你背单词的脚本（py2.7）
+A script to help you memorize words (py2.7)
 
-# 使用方法
+# How to use
 ```shell
-# 先申请有道开放平台账户，会有100元体验金，够用了。
+# First apply for a Youdao Open Platform account, you will get 100 RMB experience money, which is enough.
 #
-# 打开python脚本，修改40，41行的id和key，保存。
+# Open the python script, change the id and key in line 40,41, save.
 #
-# 在当前目录下
+# In the current directory
 $ bash go.sh
 #
-# 使用vi在 wordList 下新建单词表(*.txt)就可以使用啦
+# Use vi to create a new word list (*.txt) under wordList and you're ready to use it
 ```
 
-# 文件结构
-1. wordList：存放单词表
-2. wordSound:存放单词语音
+# File structure
+1. wordList: holds the word list
+2. wordSound: holds word sounds
 
-# 已知Bugs
-1. MacOS完美使用；linux无法播放语音其他正常；windows GG。
-2. 生成选项时判断有误，可能会存在多个正确选项的问题。
-3. 有道返回的释义总是含有人名，很烦。
+# Known Bugs
+1. there is an error in judgment when generating options, there may be a problem of multiple correct options.
+2. The definition returned by Aritomo always contains the name of a person, which is annoying.
 
-# TODO：
-1. 修复bug2，其他随缘。
-2. 整合提醒服务，定时给你发邮件提醒复习。目前只能给我自己发邮件，考完试再完善提醒服务。
+# TODO.
+1. fix bug2, others as you like.
+2. integrate reminder service to send you emails to remind you to review regularly. At present, I can only send emails to myself, and then improve the reminder service after the exam.
